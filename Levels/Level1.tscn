@@ -1,0 +1,66 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://tilesets/MainTileSet.tres" type="TileSet" id=1]
+[ext_resource path="res://Items/JumpPad.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Hazards/SpikeTop.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Items/Portal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sound/10-Surf-Shimmy-Free-To-Use-NO-COPYRIGHT-Music-YouTube.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Items/Coin.tscn" type="PackedScene" id=7]
+[ext_resource path="res://GUI/GUI.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Levels/GameState.gd" type="Script" id=10]
+
+[node name="Level1" type="Node2D"]
+script = ExtResource( 10 )
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1347.6, 782.067 )
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 0, -150 )
+scale = Vector2( 5, 5 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
+show_collision = true
+collision_layer = 2
+format = 1
+tile_data = PoolIntArray( -262135, 0, 0, -262134, 0, 0, -262133, 0, 0, -262132, 0, 0, -262131, 0, 0, -262130, 0, 0, -262129, 0, 0, -262128, 0, 0, -262127, 0, 0, -262126, 0, 0, -196589, 0, 0, -196588, 0, 0, -196587, 0, 0, 458725, 0, 0, 458726, 0, 0, 458727, 0, 0, 458728, 0, 0, 458729, 0, 0, 458730, 0, 0, 458731, 0, 0, 458732, 0, 0, 458733, 0, 0, 458734, 0, 0, 458735, 0, 0, 458736, 0, 0, 458737, 0, 0, 458738, 0, 0, 458739, 0, 0, 458740, 0, 0, 458741, 0, 0, 458742, 0, 0, 458743, 0, 0, 458744, 0, 0, 458745, 0, 0, 458746, 0, 0, 458747, 0, 0, 458748, 0, 0, 458749, 0, 0, 458750, 0, 0, 458751, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 393230, 0, 0, 393231, 0, 0, 393232, 0, 0, 393233, 0, 0, 393234, 0, 0, 393235, 0, 0, 393236, 0, 0, 393237, 0, 0, 393238, 0, 0, 393239, 0, 0, 393240, 0, 0, 393241, 0, 0, 393242, 0, 0, 393243, 0, 0, 393244, 0, 0, 393245, 0, 0, 393246, 0, 0, 393247, 0, 0, 393248, 0, 0, 393249, 0, 0, 393250, 0, 0, 393251, 0, 0, 393252, 0, 0, 393253, 0, 0, 393254, 0, 0, 393255, 0, 0, 393256, 0, 0, 393257, 0, 0, 393258, 0, 0, 393259, 0, 0, 393260, 0, 0, 393261, 0, 0, 393262, 0, 0, 393263, 0, 0, 393264, 0, 0, 393265, 0, 0, 393266, 0, 0, 393267, 0, 0, 393268, 0, 0, 393269, 0, 0, 393270, 0, 0, 393271, 0, 0, 393272, 0, 0, 393273, 0, 0, 393274, 0, 0, 393275, 0, 0, 393276, 0, 0, 393277, 0, 0, 393278, 0, 0, 393279, 0, 0, 393280, 0, 0, 393281, 0, 0, 393282, 0, 0, 393283, 0, 0, 393284, 0, 0, 393285, 0, 0, 393286, 0, 0, 393287, 0, 0, 393288, 0, 0, 524263, 2, 393224, 524264, 2, 393224, 524265, 2, 393224, 524266, 2, 393224, 524267, 2, 393224, 524268, 2, 393224, 524269, 2, 393224, 524270, 2, 393224, 524271, 2, 393224, 524272, 2, 393224, 524273, 2, 393224, 524274, 2, 393224, 524275, 2, 393224, 524276, 2, 393224, 524277, 2, 393224, 524278, 2, 393224, 524279, 2, 393224, 524280, 2, 393224, 524281, 2, 393224, 524282, 2, 393224, 524283, 2, 393224, 524284, 2, 393224, 524285, 2, 393224, 524286, 2, 393224, 524287, 2, 393224, 458752, 2, 393224, 458753, 2, 393224, 458754, 2, 393224, 458755, 2, 393224, 458756, 2, 393224, 458757, 2, 393224, 458758, 2, 393224, 458759, 2, 393224, 458760, 2, 393224, 458761, 2, 393224, 458762, 2, 393224, 458763, 2, 393224, 458764, 2, 393224, 458765, 2, 393224, 458766, 2, 393224, 458767, 2, 393224, 458768, 2, 393224, 458769, 2, 393224, 458770, 2, 393224, 458771, 2, 393224, 458772, 2, 393224, 458773, 2, 393224, 458774, 2, 393224, 458775, 2, 393224, 458776, 2, 393224, 458777, 2, 393224, 458778, 2, 393224, 458779, 2, 393224, 458780, 2, 393224, 458781, 2, 393224, 458782, 2, 393224, 458783, 2, 393224, 458784, 2, 393224, 458785, 2, 393224, 458786, 2, 393224, 458787, 2, 393224, 458788, 2, 393224, 458789, 2, 393224, 458790, 2, 393224, 458791, 2, 393224, 458792, 2, 393224, 458793, 2, 393224, 458794, 2, 393224, 458795, 2, 393224, 458796, 2, 393224, 458797, 2, 393224, 458798, 2, 393224, 458799, 2, 393224, 458800, 2, 393224, 458801, 2, 393224, 458802, 2, 393224, 458803, 2, 393224, 458804, 2, 393224, 458805, 2, 393224, 458806, 2, 393224, 458807, 2, 393224, 458808, 2, 393224, 458809, 2, 393224, 458810, 2, 393224, 458811, 2, 393224, 458812, 2, 393224, 458813, 2, 393224, 458814, 2, 393224, 458815, 2, 393224, 458816, 2, 393224, 458817, 2, 393224, 458818, 2, 393224, 458819, 2, 393224, 458820, 2, 393224, 458821, 2, 393224, 458822, 2, 393224 )
+
+[node name="Hazards" type="Node" parent="."]
+
+[node name="SpikeTop" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 2292.26, -2671.35 )
+
+[node name="JumPads" type="Node" parent="."]
+
+[node name="JumpPad" parent="JumPads" instance=ExtResource( 2 )]
+position = Vector2( 7094.17, 1554.87 )
+
+[node name="Colletables" type="Node" parent="."]
+
+[node name="Crystal" parent="Colletables" instance=ExtResource( 7 )]
+position = Vector2( 1772, 847.554 )
+
+[node name="Crystal2" parent="Colletables" instance=ExtResource( 7 )]
+position = Vector2( 2019.3, 894.748 )
+
+[node name="Crystal3" parent="Colletables" instance=ExtResource( 7 )]
+position = Vector2( 1885.27, 962.707 )
+
+[node name="Crystal4" parent="Colletables" instance=ExtResource( 7 )]
+position = Vector2( 2145.77, 866.431 )
+
+[node name="NPCs" type="Node" parent="."]
+
+[node name="Portal" parent="." instance=ExtResource( 4 )]
+position = Vector2( 9892.73, -1408.87 )
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -20.0
+
+[node name="GUI" parent="." instance=ExtResource( 8 )]
+
+[connection signal="end_game" from="." to="." method="_on_Level1_end_game"]
+[connection signal="tree_entered" from="." to="Player" method="_on_Level1_tree_entered"]
